@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chexiang.dao.WorkersDao">
+	<insert id="addWorker" parameterType="com.chexiang.entity.Workers" flushCache="true">
+		INSERT INTO users
+		(id,user_name,display_name,position,position_name) VALUES
+		(#{id},#{user_name},#{display_name},#{position},#{position_name})
+	</insert>
+	<update id="updateWorker" parameterType="com.chexiang.entity.Workers">
+		UPDATE users SET
+		user_name=#{user_name},display_name=#{display_name},position=#{position},position_name=#{position_name}
+		WHERE id=#{id}
+	</update>
+	<delete id="deleteWorker" parameterType="int">
+		DELETE FROM users
+		WHERE id=#{id}
+	</delete>
+	<select id="getWorkersList" parameterType="com.chexiang.entity.Workers"
+		resultType="com.chexiang.entity.Workers">
+		SELECT
+		id,user_name,display_name,position,position_name FROM
+		users
+	</select>
+</mapper>

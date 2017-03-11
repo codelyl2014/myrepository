@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CalculateTestTime</servlet-name>
+		<servlet-class>com.servlet.CalculateTestTime</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CalculateMeasure</servlet-name>
+		<servlet-class>com.servlet.CalculateMeasure</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CalculateDevelopTime</servlet-name>
+		<servlet-class>com.servlet.CalculateDevelopTime</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>Calculate</servlet-name>
+		<servlet-class>com.servlet.Calculate</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>com.servlet.Search</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>JiraServlet</servlet-name>
+		<servlet-class>com.servlet.JiraServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginFilter</servlet-name>
+		<servlet-class>com.servlet.LoginFilter</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddUserServlet</servlet-name>
+		<servlet-class>com.servlet.AddUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteUserServlet</servlet-name>
+		<servlet-class>com.servlet.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateUserServlet</servlet-name>
+		<servlet-class>com.servlet.UpdateUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CalculateAllDevWorklog</servlet-name>
+		<servlet-class>com.servlet.CalculateAllDevWorklog</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CalculateAllDevWorklog</servlet-name>
+		<url-pattern>/CalculateAllDevWorklog</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CalculateTestTime</servlet-name>
+		<url-pattern>/CalculateTestTime</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CalculateMeasure</servlet-name>
+		<url-pattern>/CalculateMeasure</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CalculateDevelopTime</servlet-name>
+		<url-pattern>/CalculateDevelopTime</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Calculate</servlet-name>
+		<url-pattern>/Calculate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JiraServlet</servlet-name>
+		<url-pattern>/JiraServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddUserServlet</servlet-name>
+		<url-pattern>/AddUserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteUserServlet</servlet-name>
+		<url-pattern>/DeleteUserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateUserServlet</servlet-name>
+		<url-pattern>/UpdateUserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+  
+
+  <!-- spring DispatcherServlet 配置 -->
+	<!-- <servlet> <servlet-name>springMVC</servlet-name> <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> 
+		<init-param> <param-name>contextConfigLocation</param-name> <param-value>classpath*:applicationContext.xml</param-value> 
+		</init-param> <load-on-startup>1</load-on-startup> </servlet> <servlet-mapping> 
+		<servlet-name>springMVC</servlet-name> <url-pattern>/</url-pattern> </servlet-mapping> -->
+
+	<filter>
+		<filter-name>LoginFilter1</filter-name>
+		<filter-class>com.servlet.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter1</filter-name>
+		<url-pattern>/showpagereport.jsp</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>LoginFilter2</filter-name>
+		<filter-class>com.servlet.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter2</filter-name>
+		<url-pattern>/home.jsp</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>LoginFilter3</filter-name>
+		<filter-class>com.servlet.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter3</filter-name>
+		<url-pattern>/searchid.jsp</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>LoginFilter4</filter-name>
+		<filter-class>com.servlet.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter4</filter-name>
+		<url-pattern>/showpageworktime.jsp</url-pattern>
+	</filter-mapping>
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
